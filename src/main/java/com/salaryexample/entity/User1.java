@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -28,6 +27,9 @@ public class User1 {
 
     @Column(nullable = false, name = "salary")
     private int salary;
+
+    @OneToMany(mappedBy = "user1")
+    public List<Day> days;
 
 
 //    @OneToMany(targetEntity = OffDay.class, cascade = CascadeType.ALL)
