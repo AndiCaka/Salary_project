@@ -20,8 +20,11 @@ public class Day {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 45, nullable = false, name = "users_id")
-    private int users_id;
+//    @Column(length = 45, nullable = false, name = "users_id")
+//    private int users_id;
+
+    @ManyToOne
+    private User1 user1;
 
     @Column(length = 45, nullable = false, name = "date")
     private LocalDate date;
