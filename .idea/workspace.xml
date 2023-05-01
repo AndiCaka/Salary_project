@@ -5,50 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50a8f951-37be-49c8-b6be-1ccf0bbfc9a0" name="Changes" comment="push Salary Project">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/SalarySystemApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/DayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/UserController1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/Day.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/Holiday.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/OffDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/User1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/WorkDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/DayRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/OffDayRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/UserRepository1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserService1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserServiceImpl1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/SalarySystemApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/DayController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/UserController1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Day.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Holiday.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/OffDay.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/User1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/WorkDay.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/DayRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/OffDayRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/UserRepository1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserService1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserServiceImpl1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/DayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/DayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/UserController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/Day.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/User1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/DayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/DayRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/OffDayRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/UserRepository1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserService1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserServiceImpl1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/DayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/DayController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/UserController1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Day.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Day.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Holiday.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/OffDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/User1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/WorkDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/DayRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/DayRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/OffDayRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/UserRepository1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserService1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserServiceImpl1.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +51,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2OYFb4NtgZ4SmkbRHQJDiNpwRKO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -84,7 +69,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/USER/OneDrive/Desktop/Porjects/Salary project",
+    "last_opened_file_path": "C:/Users/USER/OneDrive/Desktop/Porjects/Salary-management-System-master",
+    "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "91a7fa703dcb0ff9b5b5bd73b4545b3b"
   }
 }]]></component>

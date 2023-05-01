@@ -5,10 +5,8 @@ import com.salaryexample.service.DayService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController
 @RequestMapping("/day")
@@ -17,9 +15,9 @@ public class DayController {
     @Autowired
     private DayService dayService;
 
-    @GetMapping("/getUserDay/{id}")
+    @GetMapping("/getDaysByUserId/{id}")
     public ResponseEntity<?> findUserById(@PathVariable Integer id){
-        return new ResponseEntity<>(dayService.findDayByUserId(id), HttpStatus.OK);
+        return new ResponseEntity<>(dayService.findDaysByUserId(id), HttpStatus.OK);
     }
 
     @GetMapping("/getAll")
@@ -27,9 +25,21 @@ public class DayController {
         return new ResponseEntity<>(dayService.findAll(), HttpStatus.OK);
     }
 
-    @PostMapping("/add")
+    @PostMapping("/addDay")
     public Day save(@RequestBody Day day){
         dayService.save(day);
         return day;
+    }
+
+    @DeleteMapping("/deleteDay/{id}")
+    public ResponseEntity<Void> deleteDay(@PathVariable Integer id) {
+        dayService.deleteDay(id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping("/updateDay/{id}")
+    public ResponseEntity<Day> updateDay(@PathVariable Integer id, @RequestBody Day newDay) {
+        dayService.updateDay(id, newDay);
+        return ResponseEntity.ok(newDay);
     }
 }
