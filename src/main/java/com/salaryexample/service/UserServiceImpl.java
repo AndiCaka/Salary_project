@@ -5,6 +5,8 @@ import com.salaryexample.repository.DayRepository;
 import com.salaryexample.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
 
@@ -12,6 +14,7 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -24,15 +27,18 @@ public class UserServiceImpl implements UserService{
     DayRepository dayRepository;
 
     @Override
-    public double getSalary(Integer id) {
+    public double getSalary(Authentication authentication) {
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        Optional<User> user = userRepository.findByUsername(userDetails.getUsername());
+        Long userId = user.get().getId();
 
-        double hour_amount = userRepository.findUserById(id).getSalary()/176;
+        double hour_amount = userRepository.findUserById(userId).getSalary()/176;
 
         int hour_out = 0;
         int hour_in = 0;
         double total_amount = 0;
 
-        for(Day day: dayRepository.workList(id)){
+        for(Day day: dayRepository.workList(userId)){
             int hour = day.getHour();
 
             if (isReligionHoliday(day.getDate())){
@@ -97,29 +103,41 @@ public class UserServiceImpl implements UserService{
         return false;
     }
 
-    @Override
-    public User getUserById(Integer id) {
-        return userRepository.findUserById(id);
-    }
+//    @Override
+//    public User getUserById(Long id) {
+//        return userRepository.findUserById(id);
+//    }
 
     @Override
-    public void deleteUser(Integer id) {
-        userRepository.deleteById(id);
+    public User getAuthenticatedUser(Authentication authentication) {
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        Optional<User> user = userRepository.findByUsername(userDetails.getUsername());
+        return user.get();
     }
 
-    @Override
-    public void updateUser(Integer id, User newUser) {
-        User user = userRepository.findById(id).orElseThrow(() -> new NotFoundException("User with id "+ id +" not found."));
-        user.setFirstName(newUser.getFirstName());
-        user.setLastName(newUser.getLastName());
-        user.setSalary(newUser.getSalary());
-        userRepository.save(user);
-    }
+//    @Override
+//    public void deleteUser(Integer id) {
+//        userRepository.deleteById(id);
+//    }
 
-    @Override
-    public void save(User user) {
-        userRepository.save(user);
-    }
+//    @Override
+//    public User updateUser(Long id, User newUser) {
+//        User user = userRepository.findById(id.intValue()).orElseThrow(() -> new NotFoundException("User with id "+ id +" not found."));
+//        user.setName(newUser.getName());
+//        user.setSurname(newUser.getSurname());
+//        user.setUsername(newUser.getUsername());
+//        user.setEmail(newUser.getEmail());
+//        user.setPassword(newUser.getPassword());
+//        user.setSalary(newUser.getSalary());
+//        user.setRoles(newUser.getRoles());
+//        userRepository.save(user);
+//        return user;
+//    }
+
+//    @Override
+//    public void save(User user) {
+//        userRepository.save(user);
+//    }
 
     @Override
     public List<User> findAll() {

@@ -4,33 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50a8f951-37be-49c8-b6be-1ccf0bbfc9a0" name="Changes" comment="push Salary Project">
+    <list default="true" id="50a8f951-37be-49c8-b6be-1ccf0bbfc9a0" name="Changes" comment="refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/ERole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/payload/request/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/payload/request/SignupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/payload/response/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/payload/response/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/jwt/AuthEntryPointJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/jwt/AuthTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/jwt/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/services/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/services/UserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/DayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/DayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/UserController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/Day.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/User1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/DayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/DayRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/OffDayRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/UserRepository1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserService1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserServiceImpl1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/DayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/DayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/UserController1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Day.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Day.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Holiday.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/OffDay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/User1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/WorkDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/DayRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/DayRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/OffDayRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/UserRepository1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserService1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserServiceImpl1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +51,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,7 +81,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/USER/OneDrive/Desktop/Porjects/Salary-management-System-master",
+    "last_opened_file_path": "C:/Users/USER/Downloads/spring-boot-spring-security-jwt-authentication-master",
     "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "91a7fa703dcb0ff9b5b5bd73b4545b3b"
   }
@@ -81,6 +93,12 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.salaryexample" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn spring-boot:run" />
+      <command value="mvn clean:clean" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="SalarySystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -102,6 +120,7 @@
       <workItem from="1681729678938" duration="23290000" />
       <workItem from="1681920478395" duration="1665000" />
       <workItem from="1682194906745" duration="18391000" />
+      <workItem from="1683299857813" duration="31536000" />
     </task>
     <servers />
   </component>
@@ -122,5 +141,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push Salary Project" />
     <option name="LAST_COMMIT_MESSAGE" value="push Salary Project" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/salaryexample/controller/AuthController.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="jdk.proxy2.$Proxy147" memberName="h" />
+        <PinnedItemInfo parentTag="org.springframework.aop.framework.JdkDynamicAopProxy" memberName="advised" />
+        <PinnedItemInfo parentTag="org.springframework.aop.framework.JdkDynamicAopProxy" memberName="proxiedInterfaces" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
