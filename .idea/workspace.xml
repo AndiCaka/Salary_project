@@ -4,44 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50a8f951-37be-49c8-b6be-1ccf0bbfc9a0" name="Changes" comment="refactoring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/ERole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/payload/request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/payload/request/SignupRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/payload/response/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/payload/response/MessageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/jwt/AuthEntryPointJwt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/jwt/AuthTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/jwt/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/services/UserDetailsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/security/services/UserDetailsServiceImpl.java" afterDir="false" />
+    <list default="true" id="50a8f951-37be-49c8-b6be-1ccf0bbfc9a0" name="Changes" comment="added authorization and roles">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/EmailMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/EmailSenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/EmailSenderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/AuthController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/ERole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/payload/request/LoginRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/payload/request/SignupRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/payload/response/JwtResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/payload/response/MessageResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/RoleRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/jwt/AuthEntryPointJwt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/jwt/AuthTokenFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/jwt/JwtUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/services/UserDetailsImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/services/UserDetailsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/DayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/DayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/DayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/DayRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/DayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/DayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/DayRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/DayRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +68,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/USER/Downloads/spring-boot-spring-security-jwt-authentication-master",
+    "last_opened_file_path": "C:/Users/USER/OneDrive/Desktop/Porjects/Salary project",
     "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "91a7fa703dcb0ff9b5b5bd73b4545b3b"
   }
@@ -120,8 +107,18 @@
       <workItem from="1681729678938" duration="23290000" />
       <workItem from="1681920478395" duration="1665000" />
       <workItem from="1682194906745" duration="18391000" />
-      <workItem from="1683299857813" duration="31536000" />
+      <workItem from="1683299857813" duration="34750000" />
+      <workItem from="1684680141449" duration="599000" />
+      <workItem from="1684693618778" duration="1611000" />
     </task>
+    <task id="LOCAL-00001" summary="added authorization and roles">
+      <created>1683559903095</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683559903095</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,18 +137,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push Salary Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="push Salary Project" />
+    <MESSAGE value="added authorization and roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added authorization and roles" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/salaryexample/controller/AuthController.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="jdk.proxy2.$Proxy147" memberName="h" />

@@ -19,6 +19,7 @@ import com.salaryexample.repository.RoleRepository;
 import com.salaryexample.repository.UserRepository;
 import com.salaryexample.security.jwt.JwtUtils;
 import com.salaryexample.security.services.UserDetailsImpl;
+import com.salaryexample.service.EmailSenderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -50,6 +51,9 @@ public class AuthController {
 
     @Autowired
     JwtUtils jwtUtils;
+
+    @Autowired
+    private EmailSenderService emailSenderService;
 
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {

@@ -5,6 +5,7 @@ import com.salaryexample.entity.User;
 import com.salaryexample.repository.DayRepository;
 import com.salaryexample.repository.UserRepository;
 import com.salaryexample.service.DayService;
+import com.salaryexample.service.EmailSenderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,9 @@ public class DayController {
 
     @Autowired
     private DayService dayService;
+
+    @Autowired
+    private EmailSenderService emailSenderService;
 
     @Autowired
     private DayRepository dayRepository;
