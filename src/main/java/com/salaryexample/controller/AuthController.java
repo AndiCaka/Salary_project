@@ -69,6 +69,8 @@ public class AuthController {
                 .map(item -> item.getAuthority())
                 .collect(Collectors.toList());
 
+        this.emailSenderService.sendEmail(userDetails.getEmail(), "Singin", "Hi "+userDetails.getName()+", you just singin!");
+
         return ResponseEntity.ok(new JwtResponse(jwt,
                 userDetails.getId(),
                 userDetails.getUsername(),
@@ -132,6 +134,8 @@ public class AuthController {
 
         user.setRoles(roles);
         userRepository.save(user);
+
+        this.emailSenderService.sendEmail(user.getEmail(), "Singup", "Hi "+user.getName()+", you just singup!");
 
         return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
     }

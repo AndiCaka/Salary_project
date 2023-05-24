@@ -10,9 +10,9 @@ public interface DayService {
 
     List<Day> findAll();
 
-    void deleteDay(Integer id);
+    void deleteDay(Authentication authentication,Integer id);
 
-    void updateDay(Integer id, Day newDay);
+    void updateDay(Authentication authentication,Integer id, Day newDay);
 
     Day createDay(Authentication authentication, Day day);
 

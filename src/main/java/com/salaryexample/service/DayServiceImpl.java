@@ -20,6 +20,9 @@ import java.util.Optional;
 public class DayServiceImpl implements DayService{
 
     @Autowired
+    private EmailSenderService emailSenderService;
+
+    @Autowired
     DayRepository dayRepository;
 
     @Autowired
@@ -31,16 +34,47 @@ public class DayServiceImpl implements DayService{
     }
 
     @Override
-    public void deleteDay(Integer id) {
+    public void deleteDay(Authentication authentication, Integer id) {
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        Optional<User> user = userRepository.findByUsername(userDetails.getUsername());
+        Day day = dayRepository.findById(id).orElseThrow(() -> new NotFoundException("Day with id "+ id +" not found."));
+
+        String message  = "Hi "+user.get().getName()+", you just deleted a day!"
+                +"\nThe day you deleted was: "
+                +"\nhours: "+ day.getHour()
+                +"\ndate: "+ day.getDate()
+                +"\n";
+
         dayRepository.deleteById(id);
+
+        this.emailSenderService.sendEmail(user.get().getEmail(), "Delete day", message);
+
     }
 
     @Override
-    public void updateDay(Integer id, Day newDay) {
+    public void updateDay(Authentication authentication, Integer id, Day newDay) {
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        Optional<User> user = userRepository.findByUsername(userDetails.getUsername());
         Day day = dayRepository.findById(id).orElseThrow(() -> new NotFoundException("Day with id "+ id +" not found."));
+
+        String message  = "Hi "+user.get().getName()+", you just update a day!"
+                +"\nThe old day was: "
+                +"\nhours: "+ day.getHour()
+                +"\ndate: "+ day.getDate()
+                +"\n";
+
         day.setDate(newDay.getDate());
         day.setHour(newDay.getHour());
         dayRepository.save(day);
+
+        message = message
+                +"\nThe new day is: "
+                +"\nhours: "+ day.getHour()
+                +"\ndate: "+ day.getDate()
+                +"\n";
+
+        this.emailSenderService.sendEmail(user.get().getEmail(), "Update day", message);
+
     }
 
     @Override
@@ -50,6 +84,10 @@ public class DayServiceImpl implements DayService{
 
         day.setUser(user.get());
         Day savedDay = dayRepository.save(day);
+
+        this.emailSenderService.sendEmail(user.get().getEmail(), "Add day", "Hi "+user.get().getName()+", you just add a day!" +
+                "\nYou worked "+ day.getHour() + " hours on " + day.getDate());
+
         return savedDay;
     }
 

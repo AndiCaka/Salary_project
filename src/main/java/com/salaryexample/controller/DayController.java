@@ -26,9 +26,6 @@ public class DayController {
     private DayService dayService;
 
     @Autowired
-    private EmailSenderService emailSenderService;
-
-    @Autowired
     private DayRepository dayRepository;
 
     @Autowired
@@ -51,14 +48,14 @@ public class DayController {
     }
 
     @DeleteMapping("/deleteDay/{id}")
-    public ResponseEntity<Void> deleteDayById(@PathVariable Integer id) {
-        dayService.deleteDay(id);
+    public ResponseEntity<Void> deleteDayById(Authentication authentication, @PathVariable Integer id) {
+        dayService.deleteDay(authentication, id);
         return ResponseEntity.noContent().build();
     }
 
     @PutMapping("/updateDay/{id}")
-    public ResponseEntity<Day> updateDay(@PathVariable Integer id, @RequestBody Day newDay) {
-        dayService.updateDay(id, newDay);
+    public ResponseEntity<Day> updateDay(Authentication authentication, @PathVariable Integer id, @RequestBody Day newDay) {
+        dayService.updateDay(authentication, id, newDay);
         return ResponseEntity.ok(newDay);
     }
 }

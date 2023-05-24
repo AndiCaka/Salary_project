@@ -4,31 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50a8f951-37be-49c8-b6be-1ccf0bbfc9a0" name="Changes" comment="added authorization and roles">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/EmailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/entity/EmailMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/EmailSenderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/EmailSenderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/AuthController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/TestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/ERole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/entity/Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/payload/request/LoginRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/payload/request/SignupRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/payload/response/JwtResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/payload/response/MessageResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/repository/RoleRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/WebSecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/jwt/AuthEntryPointJwt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/jwt/AuthTokenFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/jwt/JwtUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/services/UserDetailsImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/security/services/UserDetailsServiceImpl.class" afterDir="false" />
+    <list default="true" id="50a8f951-37be-49c8-b6be-1ccf0bbfc9a0" name="Changes" comment="configuring email">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/DayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/controller/DayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/salaryexample/service/DayServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/salaryexample/service/DayServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,20 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/USER/OneDrive/Desktop/Porjects/Salary project",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "91a7fa703dcb0ff9b5b5bd73b4545b3b"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/OneDrive/Desktop/Porjects/Salary project&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;91a7fa703dcb0ff9b5b5bd73b4545b3b&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.salaryexample.service" />
